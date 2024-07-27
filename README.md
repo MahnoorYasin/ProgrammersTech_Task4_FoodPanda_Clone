@@ -8,10 +8,7 @@ Welcome to the **FoodPanda Clone** project! This project is a replica of the pop
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Project Structure](#project-structure)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
