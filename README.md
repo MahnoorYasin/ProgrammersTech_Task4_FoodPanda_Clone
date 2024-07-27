@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# ProgrammersTech_Task4_FoodPanda_Clone
+Explore ProgrammersTech: a repository capturing my web dev journey through detailed tasks, organized code, project updates, and essential docs. It showcases my skills in web technologies, blending theory with real-world applications, and tracks my growth in this dynamic field.
+>>>>>>> ebf8596c3353148ed4573f2ddc3e7add3b1b200a
