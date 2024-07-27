@@ -1,75 +1,133 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# FoodPanda Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **FoodPanda Clone** project! This project is a replica of the popular food delivery service, **FoodPanda**, built using the MERN stack (MongoDB, Express.js, React, Node.js). It offers a comprehensive, full-stack solution for browsing restaurants, placing orders, and managing user accounts.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The **FoodPanda Clone** project is a web application that replicates the core functionalities of FoodPanda, allowing users to view menus, add items to a cart, and place orders. This project serves as a practical demonstration of using the MERN stack to create a dynamic and responsive web application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **User Authentication**: Register and log in to access personalized features and order history.
+- **Order Management**: Add items to the cart and proceed with a seamless checkout process.
+- **Responsive Design**: Enjoy a consistent user experience across different devices.
+- **Real-time Updates**: Dynamic updates using React for a smooth user experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **Frontend**:
+  - **React.js**: For building the user interface and handling state management.
+  - **CSS3**: For styling the application with responsive and modern design.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Backend**:
+  - **Node.js**: For server-side scripting.
+  - **Express.js**: As a web application framework to handle routes and middleware.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Database**:
+  - **MongoDB**: For storing user data, restaurant details, and orders.
+  - **Mongoose**: As an ODM to interact with MongoDB.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+To set up the FoodPanda Clone project locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the Repository**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/MahnoorYasin/ProgrammersTech_Task4_FoodPanda_Clone.git
+   cd ProgrammersTech_Task4_FoodPanda_Clone
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install Dependencies**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - **Backend Dependencies**:
 
-## Learn More
+     ```bash
+     cd backend
+     npm install
+     ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - **Frontend Dependencies**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+     ```bash
+     cd ../frontend
+     npm install
+     ```
 
-### Code Splitting
+3. **Configure Environment Variables**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   Create a `.env` file in the `backend` directory and add the following environment variables:
 
-### Analyzing the Bundle Size
+   ```bash
+   PORT=5000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret_key
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   Replace `your_mongodb_connection_string` with your actual MongoDB URI and `your_jwt_secret_key` with a secure key for JWT authentication.
 
-### Making a Progressive Web App
+4. **Start the Application**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   - **Backend**:
 
-### Advanced Configuration
+     ```bash
+     cd backend
+     npx nodemon 
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   - **Frontend**:
 
-### Deployment
+     ```bash
+     cd ../frontend
+     npm start
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+5. **Access the Application**
 
-### `npm run build` fails to minify
+   Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the FoodPanda Clone.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# ProgrammersTech_Task4_FoodPanda_Clone
-Explore ProgrammersTech: a repository capturing my web dev journey through detailed tasks, organized code, project updates, and essential docs. It showcases my skills in web technologies, blending theory with real-world applications, and tracks my growth in this dynamic field.
->>>>>>> ebf8596c3353148ed4573f2ddc3e7add3b1b200a
+## Project Structure
+
+The project is organized into two main folders: `frontend` and `backend`. Here is an overview of the project structure:
+
+```
+FoodPanda_Clone/
+├── backend/
+│   ├── config/              # Configuration files (e.g., database connection)
+│   ├── controllers/         # Controller files for handling requests
+│   ├── models/              # Mongoose models for database schema
+│   ├── routes/              # Express.js routes
+│   ├── middleware/          # Custom middleware for authentication, etc.
+│   ├── utils/               # Utility functions and helpers
+│   ├── .env                 # Environment variables
+│   ├── server.js            # Entry point for the backend
+│   └── package.json         # Backend dependencies
+├── frontend/
+│   ├── public/              # Public assets like images and index.html
+│   ├── src/
+│   │   ├── components/      # Reusable React components
+│   │   ├── pages/           # Pages for different routes
+│   │   ├── styles/          # CSS and styling files
+│   │   ├── App.js           # Main React component
+│   │   └── index.js         # Entry point for the frontend
+│   └── package.json         # Frontend dependencies
+└── README.md                # Project documentation
+```
+
+## Usage
+
+1. **Register/Login**: Create an account or log in to access personalized features.
+2. **Browse Restaurants**: Explore available restaurants and their menus.
+3. **Manage Cart**: Add items to your cart and view cart contents.
+4. **Place Orders**: Proceed to checkout and place your order with ease.
