@@ -1,0 +1,18 @@
+const express = require('express');
+const router = express.Router();
+
+router.post('/foodData', (req, res) => {
+    try {
+        // Ensure global variables are set
+        if (global.food_items && global.food_category) {
+            res.send([global.food_items, global.food_category]);
+        } else {
+            res.status(500).send("Data not available");
+        }
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).send("Server Error");
+    }
+});
+
+module.exports = router;

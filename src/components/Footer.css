@@ -1,0 +1,42 @@
+/* Footer.css */
+.footer {
+    background-color:lightgray; /* Light background color */
+    font-size: 1rem; /* Smaller font size */
+    padding: 1rem; /* Reduced padding */
+  }
+  
+  .footer .text-muted {
+    color: #6c757d; /* Muted text color */
+  }
+  
+  .footer .nav li {
+    display: inline; /* Align social icons horizontally */
+  }
+  
+  .footer .nav a {
+    color: #6c757d; /* Muted text color for icons */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 2rem; /* Adjust icon size */
+  }
+  
+  .footer .nav a:hover {
+    color: #000; /* Change icon color on hover */
+  }
+  
+  .footer .bi {
+    font-size: 1.6rem; /* Adjust icon size */
+  }
+  
+  .footer .col-md-6 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .justify-content-end {
+    justify-content: flex-end;
+  }
+  
+  .footer .ms-3 {
+    margin-left: 1rem;
+  }
+  
