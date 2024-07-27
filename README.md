@@ -96,35 +96,7 @@ To set up the FoodPanda Clone project locally, follow these steps:
 5. **Access the Application**
 
    Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the FoodPanda Clone.
-
-## Project Structure
-
-The project is organized into two main folders: `frontend` and `backend`. Here is an overview of the project structure:
-
-```
-FoodPanda_Clone/
-├── backend/
-│   ├── config/              # Configuration files (e.g., database connection)
-│   ├── controllers/         # Controller files for handling requests
-│   ├── models/              # Mongoose models for database schema
-│   ├── routes/              # Express.js routes
-│   ├── middleware/          # Custom middleware for authentication, etc.
-│   ├── utils/               # Utility functions and helpers
-│   ├── .env                 # Environment variables
-│   ├── server.js            # Entry point for the backend
-│   └── package.json         # Backend dependencies
-├── frontend/
-│   ├── public/              # Public assets like images and index.html
-│   ├── src/
-│   │   ├── components/      # Reusable React components
-│   │   ├── pages/           # Pages for different routes
-│   │   ├── styles/          # CSS and styling files
-│   │   ├── App.js           # Main React component
-│   │   └── index.js         # Entry point for the frontend
-│   └── package.json         # Frontend dependencies
-└── README.md                # Project documentation
-```
-
+   
 ## Usage
 
 1. **Register/Login**: Create an account or log in to access personalized features.
